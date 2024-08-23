@@ -1,3 +1,4 @@
+/* global styles */
 * {
     margin: 0px;
     box-sizing: border-box;
@@ -6,7 +7,7 @@
 body {
     background-color: #385170;
 }
-
+/*the nav block at the top */
 .navbar {
     width: 100%;
     padding-left: 20px;
@@ -17,16 +18,16 @@ body {
     background-color: #9fd3c7;
     justify-content: space-around;
 }
-
+/* the moviezco title thing there */
 .nav-title h2 {
     color: #fff;
     font-size: 1.5rem;
 }
-
+/* hamburger menu not displayed when on computer (if you open dev tools and make the page smaller you should be able to see it) */
 .hamburgerMenu {
     display: none;
 }
-
+/* the <a> tags stuff*/
 .links {
     font-size: 18px;
 }
@@ -40,11 +41,11 @@ body {
 .links a:hover {
     background-color: #385170;
 }
-
+/* hamburger menu not displayed when on computer */
 #hamburger {
     display: none;
 }
-
+/* Media query for a hamburger menu for mobile devices */
 @media (max-width:600px) {
     .navbar {
         justify-content: space-between;
@@ -54,7 +55,7 @@ body {
         display: block;
         margin-right: 20px;
     }
-
+/* the looks of the menu */
     .hamburgerMenu label {
         display: inline-block;
         cursor: pointer;
@@ -63,11 +64,13 @@ body {
         width: 50px;
     }
 
+/*  when hover over it changes to background menu to that color  */
     .hamburgerMenu label:hover,
     .navbar #hamburger:checked~.hamburgerMenu>label {
         background-color: #385170;
     }
 
+/*  */
     .hamburgerMenu label div {
         border-top: 2px solid #fff;
         display: block;
@@ -75,6 +78,7 @@ body {
         width: 25px;
     }
 
+/* Links displayed when hovered over the hamburger menu  */
     .links {
         border-top: #385170;
         background-color: #385170;
@@ -88,22 +92,25 @@ body {
         left: 0px;
     }
 
+/* so the links work in the hamburger menu */
     .links a {
         display: block;
         width: 100%;
     }
 
+/* when not checked the links have height of 0px */
     #hamburger:not(:checked)~.links {
         height: 0px;
     }
 
+/* when it is checked it will have almost full height of the viewport minus 50ox so you can see it yk */
     #hamburger:checked~.links {
         height: calc(100vh - 50px);
     }
 }
 
+/* this is just the shit for the marquee */
 .Movies {
-    font-family: Roboto slab;
     color: #9fd3c7;
     font: bolder;
 }
