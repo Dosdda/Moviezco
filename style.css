@@ -31,13 +31,13 @@ body {
 .links {
     font-size: 18px;
 }
-
+/* what the a tag looks like */
 .links a {
     color: #fff;
     text-decoration: none;
     padding: 13px 10px 13px 10px;
 }
-
+/* hover changes color */ 
 .links a:hover {
     background-color: #385170;
 }
@@ -70,7 +70,7 @@ body {
         background-color: #385170;
     }
 
-/*  */
+/* the label for the hamburger menu */
     .hamburgerMenu label div {
         border-top: 2px solid #fff;
         display: block;
@@ -114,3 +114,5 @@ body {
     color: #9fd3c7;
     font: bolder;
 }
+
+
